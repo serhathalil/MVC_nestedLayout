@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "_LayoutReferans";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<div class="col-md-12">
+    <br/>
+    <div class="col-md-3" style="background-color:lightgray;height:300px;">
+        @Html.ActionLink("Keçiören", "Kecioren", "Home") <br />
+        @Html.ActionLink("Çankaya", "Cankaya", "Home") <br />
+        @Html.ActionLink("Yenimahalle", "Yenimahalle", "Home") <br />
+        @Html.ActionLink("Mamak", "Mamak", "Home")
+    </div>
+    <div class="col-md-9" style="background-color:turquoise;height:300px;">
+        @RenderBody()
+    </div>
+    
+
+</div>
+

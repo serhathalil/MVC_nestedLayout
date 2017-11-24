@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-secondary">@Html.ActionLink("Anasayfa", "Index","Home")</button>
+            <button type="button" class="btn btn-secondary">@Html.ActionLink("Arşiv","Arsiv","Home")</button>
+            <button type="button" class="btn btn-secondary">@Html.ActionLink("Arananlar", "Arananlar", "Home")</button>
+            <button type="button" class="btn btn-secondary">@Html.ActionLink("İletişim", "Iletisim", "Home")</button>
+            <button type="button" class="btn btn-secondary">@Html.ActionLink("Referanslar", "Referanslar", "Home")</button>
+        </div> 
+        @RenderBody()
+        <div class="col-md-12" style="height:200px; background-image:url(/img/foot.jpg)">
+
+        </div>
+    </div>      
+</body>
+</html>
